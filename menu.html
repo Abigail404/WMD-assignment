@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Menu - Pizza Place</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <h1>Our Menu</h1>
+    <section>
+        <h2>Pizzas</h2>
+        <ul>
+            <li>
+                <img src="margherita.jpg" alt="Margherita Pizza" width="100">
+                Margherita - $10
+                <button onclick="addToBasket('Margherita', 10)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="pepperoni.jpg" alt="Pepperoni Pizza" width="100">
+                Pepperoni - $12
+                <button onclick="addToBasket('Pepperoni', 12)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="veggie.jpg" alt="Veggie Supreme Pizza" width="100">
+                Veggie Supreme - $11
+                <button onclick="addToBasket('Veggie Supreme', 11)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="bbqchicken.jpg" alt="BBQ Chicken Pizza" width="100">
+                BBQ Chicken - $13
+                <button onclick="addToBasket('BBQ Chicken', 13)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="hawaiian.jpg" alt="Hawaiian Pizza" width="100">
+                Hawaiian - $12
+                <button onclick="addToBasket('Hawaiian', 12)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="meatlovers.jpg" alt="Meat Lovers Pizza" width="100">
+                Meat Lovers - $14
+                <button onclick="addToBasket('Meat Lovers', 14)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="fourcheese.jpg" alt="Four Cheese Pizza" width="100">
+                Four Cheese - $13
+                <button onclick="addToBasket('Four Cheese', 13)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="buffalochicken.jpg" alt="Buffalo Chicken Pizza" width="100">
+                Buffalo Chicken - $13
+                <button onclick="addToBasket('Buffalo Chicken', 13)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="spinach&feta.jpg" alt="Spinach and Feta Pizza" width="100">
+                Spinach and Feta - $12
+                <button onclick="addToBasket('Spinach and Feta', 12)">Add to Basket</button>
+            </li>
+        </ul>
+        <h2>Drinks</h2>
+        <ul>
+            <li>
+                <img src="coke.jpg" alt="Coke" width="50">
+                Coke - $2
+                <button onclick="addToBasket('Coke', 2)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="sprite.jpg" alt="Sprite" width="50">
+                Sprite - $2
+                <button onclick="addToBasket('Sprite', 2)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="fanta.jpg" alt="Fanta" width="50">
+                Fanta - $2
+                <button onclick="addToBasket('Fanta', 2)">Add to Basket</button>
+            </li>
+            <li>
+                <img src="water.jpg" alt="Water" width="50">
+                Water - $1
+                <button onclick="addToBasket('Water', 1)">Add to Basket</button>
+            </li>
+        </ul>
+    </section>
+    <script>
+        let basket = [];
+
+        function addToBasket(item, price) {
+            basket.push({ item, price });
+            alert(`${item} has been added to your basket.`);
+            console.log(basket);
+        }
+    </script>
+    <section>
+        <section>
+            <button onclick="goToCheckout()">Checkout</button>
+        </section>
+        <script>
+            function addToBasket(item, price) {
+                basket.push({ item, price });
+                alert(`${item} has been added to your basket.`);
+                console.log(basket);
+            }
+            function goToCheckout() {
+                window.location.href = 'order.html'; // Redirect to the checkout page
+            }
+        </script> 
+    <footer>
+        <p>&copy; 2025 Abi's Pizza Place. All rights reserved.</p>
+</body>
+</html>
