@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Pizza place</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Checkout</a></li>
+        </ul>
+    </nav>
+</h1>
+<style>
+    body {
+        background-image: url('spinach&feta.jpg');
+        background-size: cover; /* Make the image cover the entire background */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        height: 100vh; /* Full viewport height */
+        margin: 0;
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .order-button {
+        background-color: red; /* Button color */
+        color: white; /* Text color */
+        font-size: 20px; /* Font size */
+        padding: 15px 30px; /* Padding */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+    }
+    .order-button:hover {
+        background-color: darkred; /* Darker red on hover */
+    }
+</style>
+<body>
+    <a href="menu.html" class="order-button">Order Now</a>
+</body>
+</html>
